@@ -1,3 +1,3 @@
-# First documentation/wiki prerelease
+# Sibyl.doc v0.1.0-rc.2
 
-Pure Java wiki revisions, optimistic locking, archive workflow and regression checks. Persistent API and original design port pending.
+Erster Addon-eigener Deploy-Plan mit eingebauter UI-Einstiegsseite für Dokumentation und Markdown-Vorschau. Nicht persistente Vorschau; MySQL-/API-Anbindung erfordert isolierten Core-SDK-Worker. Keine Legacy-Daten migriert.

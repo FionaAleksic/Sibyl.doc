@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "id": "Sibyl.doc",
+  "version": "0.1.0-rc.2",
+  "kind": "feature",
+  "dependencies": [],
+  "operations": [
+    {
+      "type": "publish-ui",
+      "path": "ui/index.html",
+      "label": "Dokumentation"
+    }
+  ]
+}
