@@ -1,16 +1,5 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sibyl · Dokumentation</title>
-<style>:root{color-scheme:light dark;font:15px/1.6 system-ui,sans-serif}body{max-width:1100px;margin:20px auto;padding:18px}header{display:flex;justify-content:space-between;align-items:center}a{color:inherit}input,textarea,button{font:inherit;padding:9px;border:1px solid #888}input,textarea{width:100%;box-sizing:border-box}textarea{min-height:220px}button{cursor:pointer}label{display:block;margin:12px 0}.columns{display:grid;grid-template-columns:1fr 1fr;gap:20px}#preview{border:1px solid #888;padding:15px;white-space:pre-wrap;overflow-wrap:anywhere}.sub{opacity:.7}@media(max-width:640px){.columns{grid-template-columns:1fr}}</style></head><body>
-<header><h1>Dokumentation</h1><a href="/">← Sibyl System</a></header>
-<p class="sub">Eigenständige Wiki-Moduloberfläche: Markdown-Vorschau. Dies ist eine <strong>nicht persistente Vorschau</strong>; reale Speicherung, Versionshistorie und Medien werden mit dem isolierten Backend-Worker ergänzt. Die ursprüngliche Wiki-Oberfläche wird schrittweise portiert.</p>
-<label>Dokumenttitel <input id="title" maxlength="240" value="Neue Dokumentation"></label>
-<div class="columns"><label>Markdown-Inhalt<textarea id="body"># Willkommen
-Hier entsteht die modulare Sibyl-Dokumentation.</textarea></label>
-<section><h2 id="preview-title">Vorschau</h2><div id="preview"></div></section></div>
-<button id="update">Vorschau aktualisieren</button><p id="status" role="status"></p>
-<script>
-"use strict";
-function update(){document.getElementById("preview-title").textContent=document.getElementById("title").value.trim()||"Ohne Titel";
- document.getElementById("preview").textContent=document.getElementById("body").value;
- document.getElementById("status").textContent="Vorschau aktualisiert – Änderungen werden in dieser Version noch nicht gespeichert.";}
-document.getElementById("update").onclick=update;update();
-</script></body></html>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sibyl · Dokumentation</title><link rel="stylesheet" href="wiki.css"><script defer src="bridge.js"></script><script defer src="wiki.js"></script></head><body>
+<div class="layout"><aside class="sidebar"><div class="toolbar"><h2>Wissensdatenbank</h2><button class="primary" id="new">+ Neu</button></div><input type="search" id="search" placeholder="Dokumente suchen …" aria-label="Dokumente suchen"><p id="count" class="muted"></p><nav id="tree"></nav></aside>
+<main><h1 id="heading">Wiki</h1><p id="meta" class="muted">Sibyl.doc · private Dokumente</p><div id="status" role="status" aria-live="polite"></div><section class="paper"><div class="toolbar"><button id="edit">Bearbeiten</button><button id="versions">Verlauf</button><button id="archive">Archivieren</button></div>
+<div id="read" class="preview"></div><form id="form" hidden><label>Titel<input id="title" maxlength="240" required></label><label>Ordner<input id="folder" maxlength="80" value="Allgemein"></label><label>Markdown<textarea id="markdown" maxlength="120000" required></textarea></label><div class="toolbar"><button class="primary" type="submit">Speichern</button><button id="cancel" type="button">Abbrechen</button></div></form>
+<section id="history" hidden><h2>Versionshistorie</h2><div id="history-items"></div></section></section><p class="muted">Die Dokumente werden zentral gespeichert, derzeit nur für dein Benutzerkonto sichtbar. Gemeinsame Gruppenrechte und Legacy-Datenübernahme sind noch nicht enthalten.</p></main></div></body></html>

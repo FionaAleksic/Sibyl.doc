@@ -14,7 +14,7 @@ import java.util.UUID;
  */
 public final class VersionedWiki {
     public static final String MODULE_ID="Sibyl.doc";
-    public static final String VERSION="0.1.0-rc.2";
+    public static final String VERSION="0.1.0-rc.3";
     public record Revision(String pageId, long version, String folderId,
                            String title, String markdown, String editor,
                            Instant modifiedAt, boolean archived) {}

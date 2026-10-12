@@ -1,3 +1,3 @@
-# Sibyl.doc v0.1.0-rc.2
+# Sibyl.doc v0.1.0-rc.3
 
-Erster Addon-eigener Deploy-Plan mit eingebauter UI-Einstiegsseite für Dokumentation und Markdown-Vorschau. Nicht persistente Vorschau; MySQL-/API-Anbindung erfordert isolierten Core-SDK-Worker. Keine Legacy-Daten migriert.
+MySQL-persistentes Wiki über den generischen Core-Records-Broker (ab RC.13). Dokumente erstellen, bearbeiten, suchen, nach Ordner gruppieren, mit Versionskonflikt-Prüfung speichern, Versionshistorie ansehen und archivieren. Sicheres Markdown als Text-Rendering. Pro Benutzer privat; globale Firmen-Wiki-ACL, Legacy-Migration, Medien und Blockeditor sind noch offen.
