@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "Sibyl.doc",
+  "version": "0.1.0-rc.1",
+  "name": "Dokumentation / Wiki",
+  "description": "Wiki-Dokumente, Versionierung, Änderungsverlauf und Soft-Archivierung als selbständiger Kern.",
+  "type": "feature",
+  "runtime": "java21-jar",
+  "entrypoint": "org.sibyl.addons.doc.VersionedWiki",
+  "apiCompatibility": ">=0.1.0 <1.0.0",
+  "capabilities": [
+    "wiki.pages.version",
+    "wiki.pages.archive",
+    "wiki.pages.read"
+  ],
+  "requires": [
+    {
+      "id": "Sibyl.core",
+      "version": ">=0.1.0"
+    }
+  ],
+  "configurationSchema": "config.schema.json",
+  "repository": "FionaAleksic/Sibyl.doc",
+  "releaseChannel": "prerelease",
+  "license": "MIT"
+}
