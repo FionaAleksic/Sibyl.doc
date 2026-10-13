@@ -1,5 +1,7 @@
 # Sibyl.doc
 
+> **Release-Stand (13.10.2026):** neueste veröffentlichte Vorabversion `v0.1.0-rc.3` · [Core-Kompatibilität und Addon-Browser](docs/CORE-COMPATIBILITY.md). Die Anzeige im Browser installiert keine Addons. Ältere Versionsbeispiele im folgenden Text bleiben als historische Dokumentation erhalten.
+
 Wiki-/Dokumentationsaddon (Pre-Release 0.1.0-rc.2) für Sibyl System. Quelle für die geplante UI-/API-Parität: [Niko Wiki-Testaddon](https://github.com/FionaAleksic/Niko_Web-System/tree/Test/Addons/wiki), [bestehende React-Ansicht](https://github.com/FionaAleksic/Niko_Web-System/tree/Test/frontend-next/src/modules/wiki), [bisheriger Backend-Service](https://github.com/FionaAleksic/Niko_Web-System/blob/Test/backend/src/main/java/app/webplatform/service/WikiService.java).
 
 Dieser Stand stellt das unabhängige Java-21-Domänenmodell für Wiki-Seiten, Revisionen, Optimistic Locking und Archiv bereit und enthält automatisierte Regressionstests. Build: `bash scripts/build-release.sh`.
