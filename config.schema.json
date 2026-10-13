@@ -7,17 +7,20 @@
       "type": "integer",
       "minimum": 1024,
       "maximum": 1048576,
-      "default": 1048576
+      "default": 1048576,
+      "title": "Maximale Seitengröße (Bytes)"
     },
     "archiveRetentionDays": {
       "type": "integer",
       "minimum": 1,
       "maximum": 3650,
-      "default": 90
+      "default": 90,
+      "title": "Archivaufbewahrung (Tage)"
     },
     "allowUserEditing": {
       "type": "boolean",
-      "default": true
+      "default": true,
+      "title": "Benutzer dürfen bearbeiten"
     }
   }
 }
